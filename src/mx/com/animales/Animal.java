@@ -1,7 +1,7 @@
 package mx.com.animales;
 
 //clase abstracta clase base
-public abstract class Animal {
+public abstract class Animal implements Movible{
     //agregar atributos
     private String nombre;
     private int edad;
@@ -13,8 +13,8 @@ public abstract class Animal {
     }
 
     //crear el metodo de mostrar informacion para retornarlo
-    public String mostrarInformacion(){
-        return "Nombre del animal: " + this.nombre + "Tiene: " + this.edad + "anios";
+    public void mostrarInformacion(){
+        System.out.println("Nombre del animal: " + this.nombre + " Tiene: " + this.edad + " anios");
     }
 
     //todo animal hace sonido
